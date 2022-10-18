@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1><%=city%></h1>
+      <div class="conditions">
+        <img src="/images/clear-day.png" width="200px" alt="" />
+        <p><%=temp%> &#8451;</p>
+      </div>
+      <p><%=conditions%></p>
+      <p>Humidity: <%=Humidity%></p>
+      <p>Date : <%=date%></p>
+      <form action="/" method="post">
+        <input type="text" name="cityName" placeholder="Enter city" />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </body>
+</html>
