@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
   </head>
+
   <body>
     <div class="container">
       <h1><%=city%></h1>
-      <div class="conditions">
-        <img src="/images/clear-day.png" width="200px" alt="" />
-        <p><%=temp%> &#8451;</p>
-      </div>
+      <p class="temperature"><%=temp%> &#8451;</p>
+      <img class="icon" src="/images/<%=icon%>.png" width="100px" alt="" />
       <p><%=conditions%></p>
       <p>Humidity: <%=Humidity%></p>
-      <p>Date : <%=date%></p>
+      <p>Last updated : <%=date%></p>
       <form action="/" method="post">
         <input type="text" name="cityName" placeholder="Enter city" />
         <button type="submit">Search</button>
